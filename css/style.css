@@ -1,0 +1,47 @@
+body {
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
+    margin: 50px; 
+}
+.download-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.download-btn__icon {
+    border-radius: 50%;
+    background-color: #3baaf5;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+}
+.download-btn__icon svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+.download-btn__icon:hover svg#archive-icon {
+    top: 100%;
+    opacity: 0;
+}
+.download-btn__icon svg#download-icon {
+    top: 0%;
+    opacity: 0;
+}
+.download-btn__icon:hover svg#download-icon {
+    top: 50%;
+    opacity: 1;
+}
+.download-btn__label span {
+    display: block;
+    margin-bottom: 3px;
+}
+.download-btn__label small {
+    opacity: 0.4;
+}
